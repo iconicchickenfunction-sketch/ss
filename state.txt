@@ -1,0 +1,107 @@
+<!DOCTYPE html><html lang="ja"><head>
+<meta charset="UTF-8">
+<title>システムエラー｜COTTON CLUB | 東京・丸の内 ライブ・レストラン</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<link rel="stylesheet" type="text/css" media="all" href="/shared/css/screen.css">
+<link rel="stylesheet" type="text/css" media="print" href="/shared/css/print.css">
+<link rel="stylesheet" type="text/css" media="all" href="/elements/css/local.css">
+<link rel="stylesheet" type="text/css" media="all" href="/shared/css/error.css">
+<!--[if lt IE 9]>
+<script src="/shared/js/html5shiv-printshiv.js"></script>
+<![endif]-->
+</head>
+<body id="categoryID_2" data-id="">
+<div id="wrapperArea">
+	<div id="anchors">
+		<p>ページ内を移動するためのリンクです。</p>
+		<ul class="link">
+			<li><a href="#mainArea">このページの本文エリアへ。</a></li>
+		</ul>
+	<!-- /anchors --></div>
+	<header>
+		<div id="header" class="clearfix">
+				<div class="header_main">
+			<h1><a href="http://www.cottonclubjapan.co.jp/jp/"><img src="/shared/images/head_logo.png" width="126" height="60" alt="COTTON CLUB"></a></h1>
+			<div class="header_text"></div>
+		<!--header_main--></div>
+<!--#include virtual="/shared/include/header_3.html" -->
+		<!-- /header --></div>
+	</header>
+	<div id="bodyArea" class="clearfix">
+		<div id="mainAreaError">
+			<section>
+				<h2><img src="/elements/images/tit_system-error.gif" width="882" height="63" alt="ご予約 システムエラー Reservation"></h2>
+				<p class="lead-txt mt36">３０分以上経過したため、セッションが切断された可能性がございます。</p>
+				<p class="mt48">誠に恐れいりますが、再度お手続きをしていただきますようお願い申し上げます。</p>
+				<p class="mt36">頻繁に同様のエラーが発生する場合、下記までお問い合わせいただきますようお願い申し上げます。</p>
+				<p>コットンクラブ 03-3215-1555</p>
+					<ul class="attentionText-insection mt96">
+													<li class="none"><span class="list"><a href="http://www.cottonclubjapan.co.jp/jp/">COTTON CLUB トップ</a></span></li>
+											</ul>
+				<div id="mainAreaBottom"></div>
+			</section>
+		<!-- /mainAreaError --></div>
+	<!-- /bodyArea --></div>
+	<div class="errFooter">
+		<div id="footer">
+		<div class="footer-top">
+			<div id="copyright">©&nbsp;COTTON CLUB JAPAN, INC. All rights reserved.</div>
+		<!-- /footer-top --></div>
+	<!-- /footer --></div>
+
+<script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/static/identify_31760074.js"></script><script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/static/main.MTEwMjY2ZTExOQ.js" data-id="CLMP35JC77U60H56C5OG"></script><script type="text/javascript" async="" src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=CLMP35JC77U60H56C5OG&amp;lib=ttq"></script><script async="" src="https://static.ads-twitter.com/uwt.js"></script><script src="https://connect.facebook.net/signals/config/985943441463554?v=2.9.280&amp;r=stable&amp;domain=reserve.cottonclubjapan.co.jp&amp;hme=b758cff5989f970d61536a685dcccfaabd7a9508da12548b3811a55c83b2e4ae&amp;ex_m=101%2C194%2C143%2C22%2C69%2C70%2C136%2C65%2C64%2C11%2C151%2C87%2C16%2C130%2C123%2C72%2C75%2C129%2C148%2C153%2C8%2C4%2C5%2C7%2C6%2C3%2C88%2C98%2C154%2C159%2C208%2C59%2C175%2C176%2C52%2C264%2C30%2C71%2C220%2C219%2C218%2C23%2C32%2C100%2C58%2C10%2C60%2C94%2C95%2C96%2C102%2C126%2C31%2C29%2C128%2C125%2C124%2C144%2C73%2C147%2C145%2C146%2C47%2C57%2C119%2C15%2C150%2C42%2C251%2C252%2C250%2C26%2C27%2C28%2C45%2C137%2C74%2C109%2C18%2C20%2C41%2C37%2C39%2C38%2C80%2C89%2C93%2C107%2C135%2C138%2C43%2C108%2C24%2C21%2C115%2C66%2C35%2C140%2C139%2C141%2C132%2C131%2C25%2C34%2C56%2C106%2C149%2C67%2C17%2C142%2C111%2C78%2C63%2C19%2C82%2C83%2C112%2C81%2C33%2C280%2C201%2C190%2C191%2C189%2C283%2C275%2C49%2C202%2C104%2C127%2C77%2C117%2C51%2C44%2C46%2C110%2C116%2C122%2C55%2C61%2C50%2C53%2C97%2C152%2C1%2C120%2C14%2C118%2C12%2C2%2C54%2C90%2C62%2C114%2C86%2C85%2C155%2C156%2C91%2C92%2C9%2C121%2C99%2C48%2C133%2C84%2C76%2C68%2C113%2C103%2C40%2C134%2C0%2C79%2C36%2C105%2C13%2C157%2C217%2C216%2C211%2C213%2C214%2C215%2C212%2C200%2C210%2C182%2C179%2C180%2C174%2C178%2C181%2C177%2C172%2C303%2C266%2C185%2C204%2C173%2C171%2C223%2C195%2C165%2C166%2C161%2C167%2C164%2C162%2C163%2C160%2C158%2C169%2C170%2C168%2C253%2C302%2C183" async=""></script><script src="https://connect.facebook.net/signals/config/2754545941243974?v=2.9.280&amp;r=stable&amp;domain=reserve.cottonclubjapan.co.jp&amp;hme=b758cff5989f970d61536a685dcccfaabd7a9508da12548b3811a55c83b2e4ae&amp;ex_m=101%2C194%2C143%2C22%2C69%2C70%2C136%2C65%2C64%2C11%2C151%2C87%2C16%2C130%2C123%2C72%2C75%2C129%2C148%2C153%2C8%2C4%2C5%2C7%2C6%2C3%2C88%2C98%2C154%2C159%2C208%2C59%2C175%2C176%2C52%2C264%2C30%2C71%2C220%2C219%2C218%2C23%2C32%2C100%2C58%2C10%2C60%2C94%2C95%2C96%2C102%2C126%2C31%2C29%2C128%2C125%2C124%2C144%2C73%2C147%2C145%2C146%2C47%2C57%2C119%2C15%2C150%2C42%2C251%2C252%2C250%2C26%2C27%2C28%2C45%2C137%2C74%2C109%2C18%2C20%2C41%2C37%2C39%2C38%2C80%2C89%2C93%2C107%2C135%2C138%2C43%2C108%2C24%2C21%2C115%2C66%2C35%2C140%2C139%2C141%2C132%2C131%2C25%2C34%2C56%2C106%2C149%2C67%2C17%2C142%2C111%2C78%2C63%2C19%2C82%2C83%2C112%2C81%2C33%2C280%2C201%2C190%2C191%2C189%2C283%2C275%2C49%2C202%2C104%2C127%2C77%2C117%2C51%2C44%2C46%2C110%2C116%2C122%2C55%2C61%2C50%2C53%2C97%2C152%2C1%2C120%2C14%2C118%2C12%2C2%2C54%2C90%2C62%2C114%2C86%2C85%2C155%2C156%2C91%2C92%2C9%2C121%2C99%2C48%2C133%2C84%2C76%2C68%2C113%2C103%2C40%2C134%2C0%2C79%2C36%2C105%2C13%2C157" async=""></script><script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-GT4KX8FR5T&amp;cx=c&amp;gtm=4e63i0"></script><script async="" src="//s.yjtag.jp/tag.js#site=LwyGJ4j"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-PQRNK8N"></script><script src="/shared/js/spconfirm.js" defer=""></script>
+
+
+<!-- Tag Manager -->
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PQRNK8N"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PQRNK8N');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Yahoo! Tag Manager -->
+<script type="text/javascript">
+  (function () {
+    var tagjs = document.createElement("script");
+    var s = document.getElementsByTagName("script")[0];
+    tagjs.async = true;
+    tagjs.src = "//s.yjtag.jp/tag.js#site=LwyGJ4j";
+    s.parentNode.insertBefore(tagjs, s);
+  }());
+</script>
+<noscript>
+  <iframe src="//b.yjtag.jp/iframe?c=LwyGJ4j" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+</noscript>
+<!-- End Yahoo! Tag Manager -->
+<!-- Tag Manager -->
+
+
+
+
+<!--#include virtual="/shared/include/footer_1.html" -->
+	<!-- /errFooter --><script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1007267853/?random=1773997868518&amp;cv=11&amp;fst=1773997868518&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;en=gtag.config&amp;gtm=45je63i0v868447291z877556218za20gzb77556218zd77556218xec&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=103116026~103200004~115616986~115938466~115938468~116024733~117484252~118104771&amp;u_w=1280&amp;u_h=720&amp;url=https%3A%2F%2Freserve.cottonclubjapan.co.jp%2Freserve%2Ferror%2Fsession&amp;frm=0&amp;tiba=%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%82%A8%E3%83%A9%E3%83%BC%EF%BD%9CCOTTON%20CLUB%20%7C%20%E6%9D%B1%E4%BA%AC%E3%83%BB%E4%B8%B8%E3%81%AE%E5%86%85%20%E3%83%A9%E3%82%A4%E3%83%96%E3%83%BB%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3&amp;hn=www.googleadservices.com&amp;npa=0&amp;pscdl=noapi&amp;auid=1475412320.1773997868&amp;uaa=x86&amp;uab=64&amp;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6&amp;uamb=0&amp;uam=&amp;uap=Linux&amp;uapv=&amp;uaw=0&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script><script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1007267853/?random=1773997868534&amp;cv=11&amp;fst=1773997868534&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45je63i0v868447291z877556218za20gzb77556218zd77556218xea&amp;gcd=13l3l3l3l1l1&amp;dma=0&amp;tag_exp=103116026~103200004~115616986~115938466~115938468~116024733~117484252~118104771&amp;u_w=1280&amp;u_h=720&amp;url=https%3A%2F%2Freserve.cottonclubjapan.co.jp%2Freserve%2Ferror%2Fsession&amp;frm=0&amp;tiba=%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%82%A8%E3%83%A9%E3%83%BC%EF%BD%9CCOTTON%20CLUB%20%7C%20%E6%9D%B1%E4%BA%AC%E3%83%BB%E4%B8%B8%E3%81%AE%E5%86%85%20%E3%83%A9%E3%82%A4%E3%83%96%E3%83%BB%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3&amp;hn=www.googleadservices.com&amp;npa=0&amp;pscdl=noapi&amp;auid=1475412320.1773997868&amp;uaa=x86&amp;uab=64&amp;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6&amp;uamb=0&amp;uam=&amp;uap=Linux&amp;uapv=&amp;uaw=0&amp;_tu=CA&amp;rfmt=3&amp;fmt=4"></script></div>
+<!-- /wrapperArea --></div>
+
+<div style="display: none; visibility: hidden;">
+<script type="text/javascript">var yahoo_ss_retargeting_id=1000405348,yahoo_sstag_custom_params=window.yahoo_sstag_params,yahoo_ss_retargeting=!0;</script>
+<script type="text/javascript" src="https://s.yimg.jp/images/listing/tool/cv/conversion.js"></script>
+<noscript></noscript></div><div style="display: none; visibility: hidden;">
+<script>!function(d,e,f,a,b,c){d.twq||(a=d.twq=function(){a.exe?a.exe.apply(a,arguments):a.queue.push(arguments)},a.version="1.1",a.queue=[],b=e.createElement(f),b.async=!0,b.src="https://static.ads-twitter.com/uwt.js",c=e.getElementsByTagName(f)[0],c.parentNode.insertBefore(b,c))}(window,document,"script");twq("config","r95dw");</script>
+</div><div style="display: none; visibility: hidden;">
+<script type="text/javascript" language="javascript">var yahoo_retargeting_id="ID8QHIFATY",yahoo_retargeting_label="",yahoo_retargeting_page_type="",yahoo_retargeting_items=[{item_id:"",category_id:"",price:"",quantity:""}];</script>
+<script type="text/javascript" language="javascript" src="https://b92.yahoo.co.jp/js/s_retargeting.js"></script>
+</div><div style="display: none; visibility: hidden;"><script async="null" src="https://s.yimg.jp/images/listing/tool/cv/ytag.js"></script>
+<script>window.yjDataLayer=window.yjDataLayer||[];function ytag(){yjDataLayer.push(arguments)}ytag({type:"ycl_cookie"});</script></div>
+<script type="text/javascript" id="" charset="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","2754545941243974");fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2754545941243974&amp;ev=PageView&amp;noscript=1"></noscript>
+<div style="display: none; visibility: hidden;">
+<script>!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","985943441463554");fbq("track","PageView");fbq(["track","Purchase",{value:"7500.00",currency:"JPY"}]);</script>
+<noscript></noscript>
+</div><div style="display: none; visibility: hidden;">
+	<script>!function(d,g,e){d.TiktokAnalyticsObject=e;var a=d[e]=d[e]||[];a.methods="page track identify instances debug on off once ready alias group enableCookie disableCookie".split(" ");a.setAndDefer=function(b,c){b[c]=function(){b.push([c].concat(Array.prototype.slice.call(arguments,0)))}};for(d=0;d<a.methods.length;d++)a.setAndDefer(a,a.methods[d]);a.instance=function(b){b=a._i[b]||[];for(var c=0;c<a.methods.length;c++)a.setAndDefer(b,a.methods[c]);return b};a.load=function(b,c){var f="https://analytics.tiktok.com/i18n/pixel/events.js";
+a._i=a._i||{};a._i[b]=[];a._i[b]._u=f;a._t=a._t||{};a._t[b]=+new Date;a._o=a._o||{};a._o[b]=c||{};c=document.createElement("script");c.type="text/javascript";c.async=!0;c.src=f+"?sdkid\x3d"+b+"\x26lib\x3d"+e;b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(c,b)};a.load("CLMP35JC77U60H56C5OG");a.page()}(window,document,"ttq");</script>
+	</div><img src="https://t.co/1/i/adsct?bci=4&amp;dv=UTC%26en-US%26Google%20Inc.%26Linux%20x86_64%26255%261280%26720%264%2624%261280%26720%260%26na&amp;eci=3&amp;event=%7B%7D&amp;event_id=9efb3c25-ade0-4765-97c9-ca6d1236a149&amp;integration=advertiser&amp;p_id=Twitter&amp;p_user_id=0&amp;pl_id=37c96688-cc36-4189-88af-b54ec93ce2c7&amp;pt=%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%82%A8%E3%83%A9%E3%83%BC%EF%BD%9CCOTTON%20CLUB%20%7C%20%E6%9D%B1%E4%BA%AC%E3%83%BB%E4%B8%B8%E3%81%AE%E5%86%85%20%E3%83%A9%E3%82%A4%E3%83%96%E3%83%BB%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3&amp;tw_document_href=https%3A%2F%2Freserve.cottonclubjapan.co.jp%2Freserve%2Ferror%2Fsession%235607&amp;tw_iframe_status=0&amp;tw_pid_src=1&amp;twpid=tw.1773997869305.924484036450032235&amp;txn_id=r95dw&amp;type=javascript&amp;version=2.3.50" height="1" width="1" fetchpriority="high" style="display: none;"><img src="https://analytics.twitter.com/1/i/adsct?bci=4&amp;dv=UTC%26en-US%26Google%20Inc.%26Linux%20x86_64%26255%261280%26720%264%2624%261280%26720%260%26na&amp;eci=3&amp;event=%7B%7D&amp;event_id=9efb3c25-ade0-4765-97c9-ca6d1236a149&amp;integration=advertiser&amp;p_id=Twitter&amp;p_user_id=0&amp;pl_id=37c96688-cc36-4189-88af-b54ec93ce2c7&amp;pt=%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%82%A8%E3%83%A9%E3%83%BC%EF%BD%9CCOTTON%20CLUB%20%7C%20%E6%9D%B1%E4%BA%AC%E3%83%BB%E4%B8%B8%E3%81%AE%E5%86%85%20%E3%83%A9%E3%82%A4%E3%83%96%E3%83%BB%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3&amp;tw_document_href=https%3A%2F%2Freserve.cottonclubjapan.co.jp%2Freserve%2Ferror%2Fsession%235607&amp;tw_iframe_status=0&amp;tw_pid_src=1&amp;twpid=tw.1773997869305.924484036450032235&amp;txn_id=r95dw&amp;type=javascript&amp;version=2.3.50" height="1" width="1" fetchpriority="high" style="display: none;"></body></html>
