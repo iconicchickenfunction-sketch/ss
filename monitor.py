@@ -18,7 +18,7 @@ def notify(msg: str):
 
 with sync_playwright() as p:
     browser = p.chromium.launch()
-    page = browser.new_page(viewport={"width": 1400, "height": 1800})
+    page = browser.new_page(viewport={"width": 1400, "height": 1800}, device_scale_factor=1)
 
     page.goto(ENTRY_URL, wait_until="load")
     page.get_by_role("link", name="ご予約はこちら").first.click()
@@ -32,18 +32,26 @@ with sync_playwright() as p:
         browser.close()
         sys.exit(0)
 
-    # 「日時の選択」見出しの直後のブロック
-    date_section = page.locator("text=日時の選択").locator("xpath=following::*[1]")
-    # 「座席エリアの選択」見出しの直後のブロック
-    seat_section = page.locator("text=座席エリアの選択").locator("xpath=following::*[1]")
+    # ページを少し下へ
+    page.evaluate("window.scrollTo(0, 500)")
+    page.wait_for_timeout(1000)
 
-    if date_section.count() == 0 or seat_section.count() == 0:
-        print("SECTION_NOT_FOUND")
-        browser.close()
-        sys.exit(1)
+    # 固定座標で小さく切り取る
+    # 1st/2nd のボタン付近
+    date_png = page.screenshot(clip={
+        "x": 290,
+        "y": 590,
+        "width": 760,
+        "height": 120
+    })
 
-    date_png = date_section.screenshot()
-    seat_png = seat_section.screenshot()
+    # 席種ボタン群だけ
+    seat_png = page.screenshot(clip={
+        "x": 285,
+        "y": 845,
+        "width": 380,
+        "height": 250
+    })
 
     date_hash = sha256_bytes(date_png)
     seat_hash = sha256_bytes(seat_png)
