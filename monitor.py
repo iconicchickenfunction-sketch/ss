@@ -18,7 +18,7 @@ def notify(msg: str):
 
 with sync_playwright() as p:
     browser = p.chromium.launch()
-    page = browser.new_page(viewport={"width": 1400, "height": 2000})
+    page = browser.new_page(viewport={"width": 1400, "height": 2200}, device_scale_factor=1)
 
     page.goto(ENTRY_URL, wait_until="load")
     page.get_by_role("link", name="ご予約はこちら").first.click()
@@ -32,22 +32,38 @@ with sync_playwright() as p:
         browser.close()
         sys.exit(0)
 
-    # ▼ここが重要（要素指定）
+    # 見出しの位置を取る
+    date_heading = page.get_by_text("日時の選択", exact=True)
+    seat_heading = page.get_by_text("座席エリアの選択", exact=True)
+    plan_heading = page.get_by_text("プラン選択", exact=True)
 
-    # 日時部分
-    date_section = page.locator("text=日時の選択").locator("xpath=..")
+    date_box = date_heading.bounding_box()
+    seat_box = seat_heading.bounding_box()
+    plan_box = plan_heading.bounding_box()
 
-    # 座席部分
-    seat_section = page.locator("text=座席エリアの選択").locator("xpath=..")
+    if not date_box or not seat_box or not plan_box:
+        print("SECTION_NOT_FOUND")
+        browser.close()
+        sys.exit(1)
 
-    # スクロールして表示させる
-    date_section.scroll_into_view_if_needed()
-    seat_section.scroll_into_view_if_needed()
+    # 見出しより少し下から、次の見出しの直前まで切り取る
+    date_clip = {
+        "x": 250,
+        "y": date_box["y"] + 40,
+        "width": 820,
+        "height": (seat_box["y"] - (date_box["y"] + 40)) - 20
+    }
 
-    date_png = date_section.screenshot()
-    seat_png = seat_section.screenshot()
+    seat_clip = {
+        "x": 250,
+        "y": seat_box["y"] + 40,
+        "width": 820,
+        "height": (plan_box["y"] - (seat_box["y"] + 40)) - 20
+    }
 
-    # デバッグ保存
+    date_png = page.screenshot(clip=date_clip)
+    seat_png = page.screenshot(clip=seat_clip)
+
     Path("debug_date.png").write_bytes(date_png)
     Path("debug_seat.png").write_bytes(seat_png)
 
@@ -67,10 +83,13 @@ with sync_playwright() as p:
     else:
         status = "NO_CHANGE"
 
+    print("CURRENT_URL:", current_url)
+    print("DATE_HASH:", date_hash)
+    print("SEAT_HASH:", seat_hash)
     print(status)
 
     if status == "CHANGED":
-        notify(f"空席変化あり\n{current_url}")
+        notify(f"空席画面に変化あり\n{current_url}")
 
     STATE_FILE.write_text(current_state, encoding="utf-8")
     browser.close()
