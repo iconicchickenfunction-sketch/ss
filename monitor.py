@@ -13,26 +13,41 @@ def sha256_bytes(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 def notify(msg: str):
+    print("WEBHOOK_URL_EXISTS:", bool(WEBHOOK_URL))
     if WEBHOOK_URL:
-        requests.post(WEBHOOK_URL, json={"content": msg}, timeout=15)
+        try:
+            r = requests.post(WEBHOOK_URL, json={"content": msg}, timeout=15)
+            print("DISCORD_STATUS_CODE:", r.status_code)
+            print("DISCORD_RESPONSE_TEXT:", r.text)
+        except Exception as e:
+            print("DISCORD_REQUEST_ERROR:", repr(e))
+    else:
+        print("NO_WEBHOOK_URL")
 
 with sync_playwright() as p:
     browser = p.chromium.launch()
     page = browser.new_page(viewport={"width": 1400, "height": 2200}, device_scale_factor=1)
 
+    # 公演ページを開く
     page.goto(ENTRY_URL, wait_until="load")
+
+    # 「ご予約はこちら」を押す
     page.get_by_role("link", name="ご予約はこちら").first.click()
     page.wait_for_load_state("networkidle")
 
     current_url = page.url
     text = page.locator("body").inner_text()
 
-    if "セッション" in text or "エラー" in text or "３０分以上経過" in text:
+    print("CURRENT_URL:", current_url)
+
+    # セッションエラーや失効ページなら終了
+    bad_words = ["セッション", "切断", "有効期限", "やり直し", "システムエラー", "３０分以上経過"]
+    if "error/session" in current_url or any(word in text for word in bad_words):
         print("SESSION_ERROR")
         browser.close()
         sys.exit(0)
 
-    # 見出しの位置を取る
+    # 見出し位置を取る
     date_heading = page.get_by_text("日時の選択", exact=True)
     seat_heading = page.get_by_text("座席エリアの選択", exact=True)
     plan_heading = page.get_by_text("プラン選択", exact=True)
@@ -46,7 +61,7 @@ with sync_playwright() as p:
         browser.close()
         sys.exit(1)
 
-    # 見出しより少し下から、次の見出しの直前まで切り取る
+    # 見出しの少し下から、次の見出しの直前まで切り取る
     date_clip = {
         "x": 250,
         "y": date_box["y"] + 40,
@@ -64,6 +79,7 @@ with sync_playwright() as p:
     date_png = page.screenshot(clip=date_clip)
     seat_png = page.screenshot(clip=seat_clip)
 
+    # デバッグ画像保存
     Path("debug_date.png").write_bytes(date_png)
     Path("debug_seat.png").write_bytes(seat_png)
 
@@ -83,10 +99,9 @@ with sync_playwright() as p:
     else:
         status = "NO_CHANGE"
 
-    print("CURRENT_URL:", current_url)
     print("DATE_HASH:", date_hash)
     print("SEAT_HASH:", seat_hash)
-    print(status)
+    print("FINAL_STATUS:", status)
 
     if status == "CHANGED":
         notify(f"空席画面に変化あり\n{current_url}")
