@@ -32,26 +32,28 @@ with sync_playwright() as p:
         browser.close()
         sys.exit(0)
 
-    # ページを少し下へ
     page.evaluate("window.scrollTo(0, 500)")
     page.wait_for_timeout(1000)
 
-    # 固定座標で小さく切り取る
-    # 1st/2nd のボタン付近
-    date_png = page.screenshot(clip={
+    date_clip = {
         "x": 290,
         "y": 590,
         "width": 760,
         "height": 120
-    })
+    }
 
-    # 席種ボタン群だけ
-    seat_png = page.screenshot(clip={
+    seat_clip = {
         "x": 285,
         "y": 845,
-        "width": 380,
-        "height": 250
-    })
+        "width": 500,
+        "height": 300
+    }
+
+    date_png = page.screenshot(clip=date_clip)
+    seat_png = page.screenshot(clip=seat_clip)
+
+    Path("debug_date.png").write_bytes(date_png)
+    Path("debug_seat.png").write_bytes(seat_png)
 
     date_hash = sha256_bytes(date_png)
     seat_hash = sha256_bytes(seat_png)
